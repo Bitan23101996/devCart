@@ -2,7 +2,7 @@ import { ApiResponse } from "@/types/apiResponse.types";
 import { getErrorMessage } from "@/utils/errorHandler";
 
 
-const BASE_URL = 'http://localhost:3500';
+const BASE_URL = 'https://devcart-backend-1r3o.onrender.com';
 
 export class ApiService {
     private async request<T>(url: string, options?: RequestInit): Promise<ApiResponse<T>> {
