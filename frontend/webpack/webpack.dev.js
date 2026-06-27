@@ -1,14 +1,25 @@
-const { merge } = require('webpack-merge');
+const { merge } = require("webpack-merge");
+const webpack = require("webpack");
+const dotenv = require("dotenv");
 
-const common = require('./webpack.common');
+const env = dotenv.config({
+  path: ".env.development",
+}).parsed;
+
+const common = require("./webpack.common");
 
 module.exports = merge(common, {
-  mode: 'development',
-  devtool: 'eval-source-map', //source map : easy to dubug file
+  mode: "development",
+  devtool: "eval-source-map", //source map : easy to dubug file
   devServer: {
     port: 3000,
     open: true,
     hot: true, //hot reload: browser updates instantly when a file change: No refresh needed.
     historyApiFallback: true, //without this after refreshing 404 Not Found will get
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      "process.env.API_BASE_URL": JSON.stringify(env.API_BASE_URL),
+    }),
+  ],
 });

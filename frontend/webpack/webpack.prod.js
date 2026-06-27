@@ -6,6 +6,12 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin"); //Minify CSS
 const TerserPlugin = require("terser-webpack-plugin"); //before: function calculateTotal() { return price * quantity;} | after:  function a(){return b*c}
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const path = require("path");
+const webpack = require("webpack");
+const dotenv = require("dotenv");
+
+const env = dotenv.config({
+  path: ".env.production",
+}).parsed;
 
 module.exports = merge(common, {
   mode: "production",
@@ -18,6 +24,10 @@ module.exports = merge(common, {
   plugins: [
     new MiniCssExtractPlugin({
       filename: "css/[name].[contenthash].css",
+    }),
+    
+    new webpack.DefinePlugin({
+      "process.env.API_BASE_URL": JSON.stringify(env.API_BASE_URL),
     }),
     // new BundleAnalyzerPlugin(),
   ],
