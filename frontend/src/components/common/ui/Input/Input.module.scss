@@ -1,0 +1,39 @@
+.inputWrapper {
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s ease;
+    margin-bottom: 5px;
+}
+
+.input:focus {
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 3px var(--input-focus-shadow);
+}
+
+.label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+
+.error {
+    margin-top: 4px;
+    color: var(--error-color);
+    font-size: 0.875rem;
+}
+
+.required {
+    color: var(--error-color);
+    font-weight: 600;
+}

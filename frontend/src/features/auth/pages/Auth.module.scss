@@ -1,0 +1,90 @@
+.authPage {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: var(--bg-color);
+}
+
+.authCard {
+    width: 100%;
+    max-width: 450px;
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 16px;
+
+    padding: 32px;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.authCard h1 {
+    text-align: center;
+
+    margin-bottom: 24px;
+
+    color: var(--text-color);
+}
+
+.authCard form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.authCard button {
+    width: 100%;
+}
+
+.link {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    text-decoration: none;
+
+    color: var(--primary-color);
+
+    font-weight: 500;
+}
+
+.authFooter {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    font-size: 0.9rem;
+
+    color: var(--text-color);
+}
+
+.authLink {
+    color: var(--primary-color);
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: opacity 0.2s ease;
+}
+
+.authLink:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .authCard {
+        padding: 24px;
+        border-radius: 12px;
+    }
+}

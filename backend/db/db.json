@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "name": "Super Admin",
+      "username": "admin",
+      "password": "$2b$10$axNGsyWpGjltwm1SVmYobuGL9iBVta3Iu46Wt2WNbpUe78Uo7GFTK"
+    }
+  ],
+  "products": [
+    {
+      "name": "Wireless Headphones",
+      "price": 1200,
+      "id": 1751005352452,
+      "category": "electronic",
+      "description": "Wireless headphones are audio devices that connect to smartphones, tablets, computers, and other electronics without cables, usually through Bluetooth technology. They provide freedom of movement, comfort, and convenience for listening to music, podcasts, or calls. Many models include features such as noise cancellation, long battery life, touch controls, and built-in microphones, making them ideal for travel, work, and daily use.",
+      "img": "/images/products/headphone.jpg"
+    },
+    {
+      "name": "Smart Watch",
+      "price": 1800,
+      "id": 1751005352453,
+      "category": "electronic",
+      "description": "Fitness tracking and smart notifications.",
+      "img": "/images/products/SmartWatch.jpg"
+    },
+    {
+      "name": "Classic Cotton T-Shirt",
+      "price": 450,
+      "id": 1751005352454,
+      "category": "fashion",
+      "description": "Soft cotton t-shirt for everyday wear.",
+      "img": "/images/products/CottonTShirt.jpg"
+    },
+    {
+      "name": "Denim Jacket",
+      "price": 950,
+      "id": 1751005352455,
+      "category": "fashion",
+      "description": "Modern fit denim jacket.",
+      "img": "/images/products/DenimJacket.jpg"
+    },
+    {
+      "name": "Wooden Wall Clock",
+      "price": 700,
+      "id": 1751005352456,
+      "category": "decor",
+      "description": "Minimalist wooden wall clock.",
+      "img": "/images/products/WallClock.jpg"
+    },
+    {
+      "name": "Ceramic Flower Vase",
+      "price": 550,
+      "id": 1751005352457,
+      "category": "decor",
+      "description": "Elegant ceramic vase for home decoration.",
+      "img": "/images/products/FlowerVase.jpg"
+    },
+    {
+      "name": "Organic Honey",
+      "price": 300,
+      "id": 1751005352458,
+      "category": "food",
+      "description": "Pure natural honey.",
+      "img": "/images/products/OrganicHoney.jpg"
+    },
+    {
+      "name": "Dark Chocolate Box",
+      "price": 250,
+      "id": 1751005352459,
+      "category": "food",
+      "description": "The box often contains a variety of shapes, fillings, and textures, such as smooth ganache, crunchy nuts, caramel centers, or fruit-infused creams. Dark chocolate is valued not only for its luxurious flavor but also for its antioxidants and potential health benefits when enjoyed in moderation. Beautifully packaged, a dark chocolate box is a popular gift for birthdays, holidays, anniversaries, and special occasions, offering a sophisticated treat that chocolate lovers can savor and share.",
+      "img": "/images/products/ChocolateBox.jpg"
+    },
+    {
+      "name": "Digital Thermometer",
+      "price": 350,
+      "id": 1751005352460,
+      "category": "healthcare",
+      "description": "Fast and accurate temperature measurement.",
+      "img": "/images/products/Thermometer.jpg"
+    },
+    {
+      "name": "Vitamin C Tablets",
+      "price": 400,
+      "id": 1751005352461,
+      "category": "healthcare",
+      "description": "Daily immune support supplement.",
+      "img": "/images/products/VitaminC.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "name": "Ceramic Flower Vase",
+      "price": 550,
+      "id": 1751005352457,
+      "category": "decor",
+      "description": "Elegant ceramic vase for home decoration.",
+      "img": "/images/products/FlowerVase.jpg",
+      "username": "admin",
+      "quantity": 2
+    }
+  ]
+}

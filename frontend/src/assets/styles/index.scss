@@ -1,0 +1,35 @@
+@use './themes';
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    overflow-y: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: var(--bg-color);
+    color: var(--text-color);
+
+    font-family:
+        Inter,
+        system-ui,
+        sans-serif;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

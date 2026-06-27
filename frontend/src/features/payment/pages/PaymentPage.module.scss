@@ -1,0 +1,33 @@
+.paymentPage {
+    padding: 24px;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .actions button {
+        width: 100%;
+    }
+}

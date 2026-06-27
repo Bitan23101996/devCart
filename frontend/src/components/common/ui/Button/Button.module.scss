@@ -1,0 +1,29 @@
+.button {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.primary {
+    background: var(--button-primary-bg);
+    color: var(--button-primary-text);
+}
+
+.secondary {
+    background: var(--button-secondary-bg);
+    color: var(--button-secondary-text);
+}
+
+.button:disabled {
+    background: var(--button-disabled-bg);
+    color: var(--button-disabled-text);
+
+    cursor: not-allowed;
+    opacity: 0.8;
+
+    transform: none;
+    box-shadow: none;
+}

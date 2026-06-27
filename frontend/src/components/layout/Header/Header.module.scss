@@ -1,0 +1,231 @@
+/* ===================================
+   Header Layout
+=================================== */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+.center {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+
+.right {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* ===================================
+   Logo
+=================================== */
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
+
+.dev {
+  color: var(--text-color);
+}
+
+/* ===================================
+   Search Bar
+=================================== */
+
+.search {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* ===================================
+   Theme - Dark - Light Mode
+=================================== */
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 20px;
+  background: var(--input-bg);
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* text icons */
+.toggle span {
+  font-size: 14px;
+  opacity: 0.3;
+  transition: all 0.2s ease;
+  transform: scale(0.95);
+}
+
+/* active icon */
+.toggle .active {
+  opacity: 1;
+  transform: scale(1.15);
+  color: var(--primary-color);
+  text-shadow: 0 0 6px rgba(255, 216, 20, 0.6);
+}
+
+/* switch background */
+.switch {
+  width: 40px;
+  height: 18px;
+  background: var(--border-color);
+  border-radius: 20px;
+  position: relative;
+}
+
+/* moving circle */
+.circle {
+  width: 14px;
+  height: 14px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.25s ease;
+}
+
+/* dark mode position */
+.dark {
+  transform: translateX(22px);
+}
+
+
+/* ===================================
+   Cart Badge
+=================================== */
+.cartWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cartIcon {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  min-width: 18px;
+  height: 18px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: var(--primary-color);
+  color: var(--primary-text-color);
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  animation: pop 0.2s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cart {
+  color: #ffd814;
+}
+
+
+/* ===================================
+  Username Welcome Text
+=================================== */
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  align-items: flex-start;
+}
+
+.greeting {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: var(--card-bg);
+}
+
+
+/* ===================================
+   Responsive
+=================================== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .center {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .search {
+    // width: 100%;
+    max-width: 100%;
+  }
+}

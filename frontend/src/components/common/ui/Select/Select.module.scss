@@ -1,0 +1,54 @@
+/* .selectWrapper {
+    width: 100%;
+} */
+
+.selectWrapper {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.default {
+    width: 100%;
+    padding: 12px;
+
+}
+
+.compact {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    min-width: 90px;
+    width: auto;
+}
+
+.select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.select:focus {
+    border-color: var(--input-focus-border);
+    box-shadow: 0 0 0 3px var(--input-focus-shadow);
+}
+
+.error {
+    margin-top: 4px;
+    color: var(--error-color);
+    font-size: 0.875rem;
+}
+
+.required {
+    color: var(--error-color);
+    font-weight: 600;
+}
