@@ -20,4 +20,7 @@ app.get("/", (req, res) => {
 app.use("/", authRouter);
 app.use("/api/products", authenticate, productRouter);
 app.use("/api/cart", authenticate, cartRouter);
-app.listen(process.env.PORT, () => console.log("devCart backend server running at port " + process.env.PORT + "..."));
+
+const PORT = process.env.PORT || 3500;
+
+app.listen(PORT, () => console.log("devCart backend server running at port " + PORT + "..."));
